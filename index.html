@@ -1,4 +1,3 @@
- 
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -7,7 +6,6 @@
     <title>Свадьба Анастасии и Дмитрия | 27.09.2025</title>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
     <style>
-
         body {
             overflow-x: auto;
             min-width: 1000px;
@@ -17,8 +15,6 @@
             min-width: 900px;
         }
 
-
-     
         * {
             margin: 0;
             padding: 0;
@@ -364,6 +360,41 @@
             text-align: left;
         }
 
+        .wishlist-section {
+            background: linear-gradient(135deg, #fff0f5, #fce4ec);
+            padding: 30px;
+            border-radius: 20px;
+            margin: 30px 0;
+            text-align: center;
+            border: 2px dashed #d81b60;
+        }
+
+        .wishlist-icon {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #d81b60;
+        }
+
+        .wishlist-btn {
+            display: inline-block;
+            padding: 15px 30px;
+            background: linear-gradient(135deg, #d81b60, #ad1457);
+            color: white;
+            text-decoration: none;
+            border-radius: 30px;
+            margin-top: 20px;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 500;
+            font-size: 1.1em;
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 25px rgba(216, 27, 96, 0.3);
+        }
+
+        .wishlist-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 35px rgba(216, 27, 96, 0.4);
+        }
+
         .celebration-section {
             text-align: center;
             margin: 50px 0;
@@ -536,28 +567,22 @@
                     <p>Быстро и организованно освобождаем зал после нескольких фото внутри. Шампанское будем распивать на улице, чтобы не создавать неудобств другим посетителям ЗАГСа.</p>
                 </div>
 
+                <!-- Блок с изображением ЗАГСа -->
+                <div class="zags-image-container">
+                    <div class="image-placeholder zagz-image" id="zagz-image">
+                        <div class="upload-icon">📸</div>
+                        <p>Фото локации ЗАГС</p>
+                        <p style="font-size: 0.8em; color: #718096; margin-top: 10px;">
+                            Загрузите файл: zagz.jpg
+                        </p>
+                    </div>
+                </div>
 
-    <!-- Блок с изображением ЗАГСа -->
-    <div class="zags-image-container">
-        <div class="image-placeholder zagz-image" id="zagz-image">
-            <div class="upload-icon">📸</div>
-            <p>Фото локации ЗАГС</p>
-            <p style="font-size: 0.8em; color: #718096; margin-top: 10px;">
-                Загрузите файл: zagz.jpg
-            </p>
-        </div>
-    </div>
-
-    <p style="margin-top: 20px; font-style: italic; color: #c53030; text-align: center;">
-        В ЗАГС АЛКОГОЛЬ/ХЛОПУШКИ И ПРОЧИЕ ПОДОБНЫЕ ВЕЩИ НЕ ПРОНОСИМ.<br>
-        Вместе мы сможем провести церемонию комфортно для всех! 💪
-    </p>
-</div>
-
-
-
-
-
+                <p style="margin-top: 20px; font-style: italic; color: #c53030; text-align: center;">
+                    В ЗАГС АЛКОГОЛЬ/ХЛОПУШКИ И ПРОЧИЕ ПОДОБНЫЕ ВЕЩИ НЕ ПРОНОСИМ.<br>
+                    Вместе мы сможем провести церемонию комфортно для всех! 💪
+                </p>
+            </div>
 
             <!-- Раздел с развлечениями -->
             <div class="entertainment-section">
@@ -630,7 +655,7 @@
                     </div>
                     <div class="room-card">
                         <div class="room-name">Комната 8</div>
-                        <div class="room-guests">Лиля, Илья</div>
+                        <div class="room-guests">Илья, Илья</div>
                     </div>
                 </div>
                 <p style="margin-top: 20px; font-style: italic; color: #667eea;">
@@ -699,45 +724,44 @@
                         </p>
                     </div>
                 </div>
-
-
+            </div>
 
             <!-- Раздел с фото/видеосъемкой -->
-<div class="photography-section">
-    <div class="photography-icon">📸</div>
-    <h3>Внимание, операторы и фотографы!</h3>
-    <p>У нас не будет профессионального фотографа, поэтому...</p>
+            <div class="photography-section">
+                <div class="photography-icon">📸</div>
+                <h3>Внимание, операторы и фотографы!</h3>
+                <p>У нас не будет профессионального фотографа, поэтому...</p>
 
-    <div class="info-card">
-        <h4>🎥 Ваша миссия, если вы согласны её принять:</h4>
-        <p>Снимайте всё! Фото, видео, сторис - всё приветствуется!</p>
-    </div>
+                <div class="info-card">
+                    <h4>🎥 Ваша миссия, если вы согласны её принять:</h4>
+                    <p>Снимайте всё! Фото, видео, сторис - всё приветствуется!</p>
+                </div>
 
-    <div class="info-card">
-        <h4>📹 Гулящая видеокамера</h4>
-        <p>У нас будет специальная "гулящая" камера, которая будет переходить от гостя к гостю!</p>
-        <p>Мы просим каждого:</p>
-        <ul>
-            <li>🎤 Рассказать теплое пожелание или забавную историю о нас</li>
-            <li>👗 Продемонстрировать свой наряд и образ дня</li>
-            <li>🥂 Снять челлендж "Первый и последний бокал"</li>
-            <li>💫 Запечатлеть интересный момент, который другие могли пропустить</li>
-            <li>🎭 Устроить мини-интервью с другими гостями</li>
-            <li>💃 Показать свои танцевальные движения</li>
-        </ul>
-        <p>Не стесняйтесь проявлять креатив - самые необычные кадры будут особенно ценны!</p>
-    </div>
+                <div class="info-card">
+                    <h4>📹 Гулящая видеокамера</h4>
+                    <p>У нас будет специальная "гулящая" камера, которая будет переходить от гостя к гостю!</p>
+                    <p>Мы просим каждого:</p>
+                    <ul>
+                        <li>🎤 Рассказать теплое пожелание или забавную историю о нас</li>
+                        <li>👗 Продемонстрировать свой наряд и образ дня</li>
+                        <li>🥂 Снять челлендж "Первый и последний бокал"</li>
+                        <li>💫 Запечатлеть интересный момент, который другие могли пропустить</li>
+                        <li>🎭 Устроить мини-интервью с другими гостями</li>
+                        <li>💃 Показать свои танцевальные движения</li>
+                    </ul>
+                    <p>Не стесняйтесь проявлять креатив - самые необычные кадры будут особенно ценны!</p>
+                </div>
 
-    <div class="info-card">
-        <h4>📁 После праздника:</h4>
-        <p>Создадим общую беседу, где все смогут выложить свои шедевры.</p>
-        <p>Так у нас соберется полная фото- и видео-летопись нашего дня!</p>
-    </div>
+                <div class="info-card">
+                    <h4>📁 После праздника:</h4>
+                    <p>Создадим общую беседу, где все смогут выложить свои шедевры.</p>
+                    <p>Так у нас соберется полная фото- и видео-летопись нашего дня!</p>
+                </div>
 
-    <p style="margin-top: 20px; font-style: italic; color: #667eea;">
-        Готовьте свои телефоны и фотоаппараты - этот день должен остаться в истории! 🎬
-    </p>
-</div>
+                <p style="margin-top: 20px; font-style: italic; color: #667eea;">
+                    Готовьте свои телефоны и фотоаппараты - этот день должен остаться в истории! 🎬
+                </p>
+            </div>
 
             <!-- Дресс-код -->
             <div class="dress-code-section">
@@ -747,6 +771,23 @@
                 мы будем рады видеть вас в том, в чем вам хорошо.</p>
                 <p style="margin-top: 15px; font-style: italic; color: #718096;">
                     Можно взять сменную удобную одежду для полного комфорта.
+                </p>
+            </div>
+
+            <!-- Wishlist раздел -->
+            <div class="wishlist-section">
+                <div class="wishlist-icon">🎁</div>
+                <h3>Список желаний</h3>
+                <p>Многие из вас спрашивали, что нам подарить на свадьбу.</p>
+                <p>Мы долго отнекивались, но в итоге сдались под натиском вашей настойчивости 😄</p>
+                <p style="margin: 20px 0;">Если хотите сделать нам подарок, вот наш вишлист:</p>
+                
+                <a href="https://t.me/wishboxbot/wishlist?startapp=-w15539728" target="_blank" class="wishlist-btn">
+                    📦 Посмотреть вишлист
+                </a>
+                
+                <p style="margin-top: 20px; font-style: italic; color: #d81b60;">
+                    Ваше присутствие на свадьбе — уже лучший подарок! ❤️
                 </p>
             </div>
 
@@ -842,56 +883,56 @@
 
     // Автозагрузка изображений при открытии страницы
     function loadLocationImages() {
-    // Загрузка изображения ЗАГСа
-    const zagzImage = document.getElementById('zagz-image');
-    if (zagzImage) {
-        const imgElement = new Image();
-        imgElement.onload = function() {
-            zagzImage.innerHTML = '';
-            zagzImage.style.backgroundImage = `url('zagz.jpg')`;
-            zagzImage.style.backgroundSize = 'cover';
-            zagzImage.style.backgroundPosition = 'center';
-            zagzImage.style.padding = '0';
-            zagzImage.style.border = 'none';
-            zagzImage.style.minHeight = '250px';
-        };
-        imgElement.onerror = function() {
-            console.log('Изображение zagz.jpg не найдено');
-        };
-        imgElement.src = 'zagz.jpg';
-    }
-
-    // Загрузка остальных изображений (если есть)
-    const locationImages = [
-        {
-            placeholder: document.querySelector('.location-images-section .image-placeholder:nth-child(1)'),
-            filename: 'location1.jpg'
-        },
-        {
-            placeholder: document.querySelector('.location-images-section .image-placeholder:nth-child(2)'),
-            filename: 'location2.jpg'
-        }
-    ];
-
-    locationImages.forEach((img) => {
-        if (img.placeholder) {
+        // Загрузка изображения ЗАГСа
+        const zagzImage = document.getElementById('zagz-image');
+        if (zagzImage) {
             const imgElement = new Image();
             imgElement.onload = function() {
-                img.placeholder.innerHTML = '';
-                img.placeholder.style.backgroundImage = `url('${img.filename}')`;
-                img.placeholder.style.backgroundSize = 'cover';
-                img.placeholder.style.backgroundPosition = 'center';
-                img.placeholder.style.padding = '0';
-                img.placeholder.style.border = 'none';
-                img.placeholder.style.minHeight = '250px';
+                zagzImage.innerHTML = '';
+                zagzImage.style.backgroundImage = `url('zagz.jpg')`;
+                zagzImage.style.backgroundSize = 'cover';
+                zagzImage.style.backgroundPosition = 'center';
+                zagzImage.style.padding = '0';
+                zagzImage.style.border = 'none';
+                zagzImage.style.minHeight = '250px';
             };
             imgElement.onerror = function() {
-                console.log(`Изображение ${img.filename} не найдено`);
+                console.log('Изображение zagz.jpg не найдено');
             };
-            imgElement.src = img.filename;
+            imgElement.src = 'zagz.jpg';
         }
-    });
-}
+
+        // Загрузка остальных изображений (если есть)
+        const locationImages = [
+            {
+                placeholder: document.querySelector('.location-images-section .image-placeholder:nth-child(1)'),
+                filename: 'location1.jpg'
+            },
+            {
+                placeholder: document.querySelector('.location-images-section .image-placeholder:nth-child(2)'),
+                filename: 'location2.jpg'
+            }
+        ];
+
+        locationImages.forEach((img) => {
+            if (img.placeholder) {
+                const imgElement = new Image();
+                imgElement.onload = function() {
+                    img.placeholder.innerHTML = '';
+                    img.placeholder.style.backgroundImage = `url('${img.filename}')`;
+                    img.placeholder.style.backgroundSize = 'cover';
+                    img.placeholder.style.backgroundPosition = 'center';
+                    img.placeholder.style.padding = '0';
+                    img.placeholder.style.border = 'none';
+                    img.placeholder.style.minHeight = '250px';
+                };
+                imgElement.onerror = function() {
+                    console.log(`Изображение ${img.filename} не найдено`);
+                };
+                imgElement.src = img.filename;
+            }
+        });
+    }
 
     // Запускаем при загрузке
     document.addEventListener('DOMContentLoaded', function() {
