@@ -509,6 +509,42 @@
             transform: translateY(-3px);
             box-shadow: 0 15px 35px rgba(0, 136, 204, 0.4);
         }
+
+        /* Стили для раздела с предложениями */
+        .suggestions-section {
+            background: linear-gradient(135deg, #f0f4ff, #e6e6ff);
+            padding: 30px;
+            border-radius: 20px;
+            margin: 30px 0;
+            text-align: center;
+            border: 2px dashed #667eea;
+        }
+
+        .suggestions-icon {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #667eea;
+        }
+
+        .suggestions-btn {
+            display: inline-block;
+            padding: 15px 30px;
+            background: linear-gradient(135deg, #667eea, #5a67d8);
+            color: white;
+            text-decoration: none;
+            border-radius: 30px;
+            margin-top: 20px;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 500;
+            font-size: 1.1em;
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 25px rgba(102, 126, 234, 0.3);
+        }
+
+        .suggestions-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 35px rgba(102, 126, 234, 0.4);
+        }
     </style>
 </head>
 <body>
@@ -729,6 +765,21 @@
                         <div class="driver-name">Пузиков Роман</div>
                     </div>
                 </div>
+                
+                <!-- Добавленная информация о водителях -->
+                <div class="info-card" style="margin-top: 20px;">
+                    <h4>🚗 Информация о трансфере</h4>
+                    <p><strong>Водитель Илья</strong> любезно согласился подвезти Илью, Ярослава, Любочку</p>
+                    <p>📍 Место встречи: <a href="https://yandex.ru/maps/-/CLqEEGlO" target="_blank">Мега – Икеа</a> (55.910792, 37.401261)</p>
+                    <p>⏰ Время: 10:30</p>
+                </div>
+                
+                <div class="info-card">
+                    <p><strong>Водитель Даниил</strong> любезно согласился подвезти Анну и Анастасию</p>
+                    <p>📍 Место встречи: <a href="https://yandex.ru/maps/-/CLqEINPM" target="_blank">Химки, Спартаковская</a> (55.885257, 37.446021)</p>
+                    <p>⏰ Время: 10:30</p>
+                </div>
+                
                 <p style="margin-top: 20px; font-style: italic; color: #c05621;">
                     ⚠️ Важное замечание: в машине Ильи нельзя бегать, и ноги ставить сразу на коврики! 😄 Думаем, другие водители его поддержат...
                 </p>
@@ -789,7 +840,7 @@
                 </div>
             </div>
 
-            <!-- НОВЫЙ РАЗДЕЛ: Telegram-чат для фото -->
+            <!-- Telegram-чат для фото -->
             <div class="telegram-section">
                 <div class="telegram-icon">📱</div>
                 <h3>Общий чат для фото и видео</h3>
