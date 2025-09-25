@@ -473,6 +473,111 @@
             box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
             display: none;
         }
+
+        /* Новые стили для секции рассадки */
+        .seating-section {
+            background: linear-gradient(135deg, #f0fff4, #e6fffa);
+            padding: 30px;
+            border-radius: 20px;
+            margin: 30px 0;
+            text-align: center;
+            border: 2px dashed #38a169;
+        }
+
+        .seating-icon {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #38a169;
+        }
+
+        .seating-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            font-family: 'Montserrat', sans-serif;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .seating-table th {
+            background: #38a169;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            font-weight: 500;
+        }
+
+        .seating-table td {
+            padding: 12px 15px;
+            border-bottom: 1px solid #e2e8f0;
+            text-align: center;
+        }
+
+        .seating-table tr:nth-child(even) {
+            background: #f7fafc;
+        }
+
+        .seating-table tr:hover {
+            background: #edf2f7;
+        }
+
+        .seating-visualization {
+            margin-top: 30px;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 15px;
+            text-align: center;
+        }
+
+        .table-diagram {
+            display: inline-block;
+            position: relative;
+            margin: 20px auto;
+            padding: 30px;
+            background: #f8fafc;
+            border: 2px dashed #718096;
+            border-radius: 10px;
+            min-width: 300px;
+        }
+
+        .table-name {
+            position: absolute;
+            top: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #718096;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 15px;
+            font-size: 0.9em;
+            font-weight: 500;
+        }
+
+        .table-guests {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        .guest-tag {
+            background: #e2e8f0;
+            padding: 8px;
+            border-radius: 8px;
+            font-size: 0.8em;
+            text-align: center;
+        }
+
+        .guest-tag.bride {
+            background: #fed7d7;
+            color: #c53030;
+        }
+
+        .guest-tag.groom {
+            background: #bee3f8;
+            color: #2b6cb0;
+        }
     </style>
 </head>
 <body>
@@ -554,7 +659,7 @@
 
                 <div class="info-card">
                     <h4>⏰ План действий</h4>
-                    <p>До начала церемонии будем ждать на улице. За 5-10 минут до начала спокойно сдаем вещи в гардероб (слева от входа) и организованно проходим в зал (справа от входа).</p>
+                    <p>До начала церемонии будем ждать на улице. За 5-10 минут до начала спокойно сдаем вечи в гардероб (слева от входа) и организованно проходим в зал (справа от входа).</p>
                 </div>
 
                 <div class="info-card">
@@ -660,32 +765,30 @@
                 </p>
             </div>
 
-        
-             <!-- Список водителей -->
-<div class="drivers-section">
-    <div class="drivers-icon">🚗</div>
-    <h3>Информация по трансферу</h3>
-    
-    <!-- Добавленная информация о трансфере -->
-    <div class="info-card" style="margin-top: 20px;">
-        <h4>🚗 Встреча от Строителей</h4>
-        <p>📍 Место встречи: <a href="https://yandex.ru/maps/-/CLqIRCmE" target="_blank">ул. Строителей</a> (55.886216, 37.413269)</p>
-        <p>⏰ Время: 10:30</p>
-        <p>👥 Для: Ильи, Ярослава, Любочки</p>
-    </div>
-    
-    <div class="info-card">
-        <h4>🚗 Встреча от Спартаковской</h4>
-        <p>📍 Место встречи: <a href="https://yandex.ru/maps/-/CLqEINPM" target="_blank">Химки, Спартаковская</a> (55.885257, 37.446021)</p>
-        <p>⏰ Время: 10:30</p>
-        <p>👥 Для: Анны и Анастасии</p>
-    </div>
-    
-    <p style="margin-top: 20px; font-style: italic; color: #c05621;">
-        ⚠️ Важное замечание: в машинах нельзя бегать, и ноги ставить сразу на коврики! 😄
-    </p>
-</div>   
-
+            <!-- Список водителей -->
+            <div class="drivers-section">
+                <div class="drivers-icon">🚗</div>
+                <h3>Информация по трансферу</h3>
+                
+                <!-- Добавленная информация о трансфере -->
+                <div class="info-card" style="margin-top: 20px;">
+                    <h4>🚗 Встреча от Строителей</h4>
+                    <p>📍 Место встречи: <a href="https://yandex.ru/maps/-/CLqIRCmE" target="_blank">ул. Строителей</a> (55.886216, 37.413269)</p>
+                    <p>⏰ Время: 10:30</p>
+                    <p>👥 Для: Ильи, Ярослава, Любочки</p>
+                </div>
+                
+                <div class="info-card">
+                    <h4>🚗 Встреча от Спартаковской</h4>
+                    <p>📍 Место встречи: <a href="https://yandex.ru/maps/-/CLqEINPM" target="_blank">Химки, Спартаковская</a> (55.885257, 37.446021)</p>
+                    <p>⏰ Время: 10:30</p>
+                    <p>👥 Для: Анны и Анастасии</p>
+                </div>
+                
+                <p style="margin-top: 20px; font-style: italic; color: #c05621;">
+                    ⚠️ Важное замечание: в машинах нельзя бегать, и ноги ставить сразу на коврики! 😄
+                </p>
+            </div>
 
             <!-- Фотографии локации -->
             <div class="location-images-section">
@@ -745,6 +848,118 @@
                 <p style="margin-top: 15px; font-style: italic; color: #718096;">
                     Можно взять сменную удобную одежду для полного комфорта.
                 </p>
+            </div>
+
+            <!-- Новая секция с рассадкой гостей -->
+            <div class="seating-section">
+                <div class="seating-icon">🍽️</div>
+                <h3>Рассадка гостей</h3>
+                <p>Для вашего удобства мы подготовили план рассадки за праздничным столом</p>
+                
+                <table class="seating-table">
+                    <thead>
+                        <tr>
+                            <th>Сторона стола</th>
+                            <th>Гости</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Телевизор</td>
+                            <td>Анастасия, Дмитрий</td>
+                        </tr>
+                        <tr>
+                            <td>Бывшев</td>
+                            <td>Рогова</td>
+                        </tr>
+                        <tr>
+                            <td>Бывшева, Мухтарова</td>
+                            <td>Рогов Р., Рогов А.</td>
+                        </tr>
+                        <tr>
+                            <td>Барток, Мухтаров И.</td>
+                            <td>Илья, Данилова О.</td>
+                        </tr>
+                        <tr>
+                            <td>Жёлудева, Мухтаров Э.</td>
+                            <td>Даня, Захаренкова Л.</td>
+                        </tr>
+                        <tr>
+                            <td>Бывшев В., Мухтаров Д.</td>
+                            <td>Тоня, Рогова Л.</td>
+                        </tr>
+                        <tr>
+                            <td>Пузиков, Федоров</td>
+                            <td>Соколова, Уткина</td>
+                        </tr>
+                        <tr>
+                            <td>Славнова, Бекезин</td>
+                            <td>Соколов, Уткина</td>
+                        </tr>
+                        <tr>
+                            <td>Бобкова, Карандашева</td>
+                            <td>Сорокина, Беляков</td>
+                        </tr>
+                        <tr>
+                            <td>Шигаева, Ускова</td>
+                            <td>Мягких</td>
+                        </tr>
+                        <tr>
+                            <td>Карпова</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Ведущий</td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <div class="seating-visualization">
+                    <h4>Визуализация рассадки</h4>
+                    <div class="table-diagram">
+                        <div class="table-name">Праздничный стол</div>
+                        <div class="table-guests">
+                            <div class="guest-tag bride">Анастасия</div>
+                            <div class="guest-tag groom">Дмитрий</div>
+                            <div class="guest-tag">Бывшев</div>
+                            <div class="guest-tag">Рогова</div>
+                            <div class="guest-tag">Бывшева</div>
+                            <div class="guest-tag">Рогов Р.</div>
+                            <div class="guest-tag">Мухтарова</div>
+                            <div class="guest-tag">Рогов А.</div>
+                            <div class="guest-tag">Барток</div>
+                            <div class="guest-tag">Илья</div>
+                            <div class="guest-tag">Мухтаров И.</div>
+                            <div class="guest-tag">Данилова О.</div>
+                            <div class="guest-tag">Жёлудева</div>
+                            <div class="guest-tag">Даня</div>
+                            <div class="guest-tag">Мухтаров Э.</div>
+                            <div class="guest-tag">Захаренкова Л.</div>
+                            <div class="guest-tag">Бывшев В.</div>
+                            <div class="guest-tag">Тоня</div>
+                            <div class="guest-tag">Мухтаров Д.</div>
+                            <div class="guest-tag">Рогова Л.</div>
+                            <div class="guest-tag">Пузиков</div>
+                            <div class="guest-tag">Соколова</div>
+                            <div class="guest-tag">Федоров</div>
+                            <div class="guest-tag">Уткина</div>
+                            <div class="guest-tag">Славнова</div>
+                            <div class="guest-tag">Соколов</div>
+                            <div class="guest-tag">Бекезин</div>
+                            <div class="guest-tag">Уткина</div>
+                            <div class="guest-tag">Бобкова</div>
+                            <div class="guest-tag">Сорокина</div>
+                            <div class="guest-tag">Карандашева</div>
+                            <div class="guest-tag">Беляков</div>
+                            <div class="guest-tag">Шигаева</div>
+                            <div class="guest-tag">Мягких</div>
+                            <div class="guest-tag">Ускова</div>
+                            <div class="guest-tag">Карпова</div>
+                            <div class="guest-tag">Ведущий</div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <!-- Wishlist раздел -->
